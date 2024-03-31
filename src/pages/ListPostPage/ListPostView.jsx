@@ -1,4 +1,4 @@
-const ListPostView = () => {
+const ListPostView = ({ formData }) => {
   return (
     <div className="container">
       <div className="post">
@@ -9,7 +9,7 @@ const ListPostView = () => {
         <p className="text">MVC Mimari ile nasıl bileşenleri yönetirim?</p>
       </div>
     </div>
-  )
+  );
 };
 
 export default ListPostView;
