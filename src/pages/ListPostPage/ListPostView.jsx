@@ -1,13 +1,16 @@
 const ListPostView = ({ formData }) => {
+ // console.log(formData)
   return (
     <div className="container">
-      <div className="post">
+      {formData?.map((form)=>(
+        <div key={form.id} className="post">
         <div className="info">
-          <h3>React MVC Pattern (Mimari)</h3>
-          <p>Mehmet</p>
+          <h3>{form.title}</h3>
+          <p>{form.user}</p>
         </div>
-        <p className="text">MVC Mimari ile nasıl bileşenleri yönetirim?</p>
+        <p className="text">{form.text}</p>
       </div>
+      ))}
     </div>
   );
 };

@@ -55,3 +55,51 @@ header {
     }
   }
 }
+
+
+
+//Ekleme Sayfasi
+
+form{
+  width: 70vw;
+  background-color: black;
+  max-width: 900px;
+  min-height: 70vh;
+  margin: 100px auto;
+  border-radius: 15px ;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h2{
+    text-align: center;
+  }
+  fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    input{
+      padding: 10px 20px;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+    }
+    textarea{
+      resize:vertical;
+      max-height: 200px;
+      min-height: 100px;
+      padding: 10px;
+      outline: none;
+      border-radius: 10px;
+    }
+  }
+  button{
+    background-color: gold;
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-weight: 900;
+    cursor: pointer;
+  }
+}
