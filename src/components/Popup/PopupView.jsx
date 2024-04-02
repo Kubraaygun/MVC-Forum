@@ -8,10 +8,16 @@ const PopupView = ({ setShowPopup, userName, data }) => {
           </h4>
           <button onClick={() => setShowPopup(false)}>Kapat</button>
         </div>
-        <div className="post">
-            <h2>title</h2>
-            <p>text</p>
-        </div>
+        {!data ? (
+          <p>Yükleniyor..</p>
+        ) : (
+          data?.map((post) => (
+            <div key={post.id} className="post">
+              <h2>{post.title}</h2>
+              <p>{post.text}</p>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
