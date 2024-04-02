@@ -25,10 +25,12 @@ MVC, Model-View-Controller kelimelerinin kısaltmasıdır ve bir yazılım uygul
 <h2>Kullanılan Teknolojiler</h2>
 
 <ul>
-<li>axios</li>
-<li>react-router-dom</li>
-<li>json-server</li>
-<li>sass</li>
+<li>Axios</li>
+<li>React-Router-Dom</li>
+<li>Json-server</li>
+<li>Sass</li>
 
 </ul>
 
+
+![](./public/MVC.gif)
