@@ -4,6 +4,7 @@ Bu proje MVC (Model-View-Controller) mimarisini anlamak ve öğrenmek amacıyla 
 
 <h2>MVC (Model View Controller) Nedir ve Niçin Kullanılır?</h2>
 MVC, Model-View-Controller kelimelerinin kısaltmasıdır ve bir yazılım uygulamasının farklı katmanlarını organize etmek için kullanılan bir tasarım desenidir. MVC'nin temel prensibi uygulamanın veri işleme mantığını (Model), kullanıcı arayüzünü (View) ve kullanıcı etkileşimlerini yöneten kontrolörü (Controller) birbirinden bağımsız tutmaktır. Bu, uygulamanın daha modüler, bakımı daha kolay ve yeniden kullanılabilir olmasını sağlar.
+<br>
 <ul>
 <li><b>Model:</b> Model, uygulamanın veri işleme mantığını temsil eder. Veritabanı işlemleri, veri manipülasyonu ve iş kurallarını içerir. Bu projede AddPostModel gibi model sınıfları kullanılarak verilerin yönetimi sağlanmıştır.</li>
 <li><b>View (Görünüm):</b> View, kullanıcı arayüzünü temsil eder. Kullanıcıya sunulan görsel ve işlevsel öğeleri içerir. Bu projede ListPostView ve PopupView gibi görünüm bileşenleri kullanılarak kullanıcı arayüzü tasarlanmıştır.</li>
@@ -32,5 +33,7 @@ MVC, Model-View-Controller kelimelerinin kısaltmasıdır ve bir yazılım uygul
 
 </ul>
 
+
+<h2>Ekran Görüntüsü</h2>
 
 ![](./public/MVC.gif)
