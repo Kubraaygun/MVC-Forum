@@ -4,6 +4,8 @@ import axios from "axios";
 
 const ListPostController = () => {
   const [formData, setFormData] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
+  const [userName, setUserName] = useState(null);
   useEffect(() => {
     axios
       .get("http://localhost:3000/posts")
@@ -12,7 +14,15 @@ const ListPostController = () => {
   }, []);
 
   //console.log(formData)
-  return <ListPostView formData={formData} />;
+  return (
+    <ListPostView
+      formData={formData}
+      setShowPopup={setShowPopup}
+      showPopup={showPopup}
+      userName={userName}
+      setUserName={setUserName}
+    />
+  );
 };
 
 export default ListPostController;

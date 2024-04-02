@@ -13,13 +13,16 @@ const AddPostView = ({ handleSubmit, onInputChange }) => {
 
       <fieldset>
         <label> Başlık: </label>
-        <input type="text" placeholder="Başlık Giriniz.."  onChange={(e) => onInputChange("title", e)}
-     />
+        <input
+          type="text"
+          placeholder="Başlık Giriniz.."
+          onChange={(e) => onInputChange("title", e)}
+        />
       </fieldset>
 
       <fieldset>
         <label> Kullanıcı Adı: </label>
-        <textarea type="text" placeholder="Açıklama Giriniz.. " />
+        <textarea type="text" placeholder="Açıklama Giriniz.. " onChange={(e)=>onInputChange("text",e)} />
       </fieldset>
 
       <button>Gönder</button>
