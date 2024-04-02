@@ -1,14 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import PopupView from "./PopupView";
 import axiosInstance from "../../constants";
 
 const PopupController = ({ setShowPopup, userName }) => {
+    const [data,setData]=useState(null)
+  useEffect(() => {
+    axiosInstance
+      .get(`posts?user=${userName}`)
+      .then((response) => setData(response.data));
+  }, [userName]);
 
-useEffect(()=>{
-    axiosInstance.get(`posts?user=${userName}`).then((response)=>console.log(response))
-},[])
 
-  return <PopupView setShowPopup={setShowPopup} userName={userName} />;
+  return <PopupView  setShowPopup={setShowPopup} userName={userName} data={data} />;
 };
 
 export default PopupController;
